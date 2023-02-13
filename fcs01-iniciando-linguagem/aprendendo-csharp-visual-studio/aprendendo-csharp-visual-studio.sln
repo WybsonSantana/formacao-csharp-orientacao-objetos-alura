@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hello-world", "hello-world\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "criando-variaveis", "criando-variaveis\criando-variaveis.csproj", "{53F8B61F-4DC4-435D-8942-B1472BE38D94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "criando-variaveis-ponto-flutuante", "criando-variaveis-ponto-flutuante\criando-variaveis-ponto-flutuante.csproj", "{3A8084D2-3C5E-4D8E-9291-12F8BD9DB132}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "criando-variaveis-ponto-flutuante", "criando-variaveis-ponto-flutuante\criando-variaveis-ponto-flutuante.csproj", "{3A8084D2-3C5E-4D8E-9291-12F8BD9DB132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "conversoes-e-outros-tipos", "conversoes-e-outros-tipos\conversoes-e-outros-tipos.csproj", "{778912B1-6CF9-4748-80ED-72F9FE07FFAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3A8084D2-3C5E-4D8E-9291-12F8BD9DB132}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A8084D2-3C5E-4D8E-9291-12F8BD9DB132}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A8084D2-3C5E-4D8E-9291-12F8BD9DB132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{778912B1-6CF9-4748-80ED-72F9FE07FFAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{778912B1-6CF9-4748-80ED-72F9FE07FFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{778912B1-6CF9-4748-80ED-72F9FE07FFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{778912B1-6CF9-4748-80ED-72F9FE07FFAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
