@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caracteres-e-textos", "cara
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "atribuicoes-de-variaveis", "atribuicoes-de-variaveis\atribuicoes-de-variaveis.csproj", "{27C9730E-720A-4EEC-92B7-91FB71DD6818}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "condicionais", "condicionais\condicionais.csproj", "{4355D53B-7933-47A7-999A-64595B1DAF50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{27C9730E-720A-4EEC-92B7-91FB71DD6818}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27C9730E-720A-4EEC-92B7-91FB71DD6818}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27C9730E-720A-4EEC-92B7-91FB71DD6818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4355D53B-7933-47A7-999A-64595B1DAF50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4355D53B-7933-47A7-999A-64595B1DAF50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4355D53B-7933-47A7-999A-64595B1DAF50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4355D53B-7933-47A7-999A-64595B1DAF50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
