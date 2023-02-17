@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "desafio-ir", "desafio-ir\de
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calcula-poupanca", "calcula-poupanca\calcula-poupanca.csproj", "{253819E0-2DF7-442F-B3D1-E003393DEA3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calcula-poupanca-2", "calcula-poupanca-2\calcula-poupanca-2.csproj", "{6C9E9048-5512-423E-A31E-8A8CB334D493}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{253819E0-2DF7-442F-B3D1-E003393DEA3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{253819E0-2DF7-442F-B3D1-E003393DEA3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{253819E0-2DF7-442F-B3D1-E003393DEA3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C9E9048-5512-423E-A31E-8A8CB334D493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9E9048-5512-423E-A31E-8A8CB334D493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9E9048-5512-423E-A31E-8A8CB334D493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9E9048-5512-423E-A31E-8A8CB334D493}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
