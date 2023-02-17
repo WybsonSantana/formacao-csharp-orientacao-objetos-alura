@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "condicionais", "condicionai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "condicionais-2", "condicionais-2\condicionais-2.csproj", "{73FAAB38-6224-474D-A841-4EF1A3869EB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "escopo", "escopo\escopo.csproj", "{C084D74C-C3FF-43DC-82BF-2B355A879A40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "escopo", "escopo\escopo.csproj", "{C084D74C-C3FF-43DC-82BF-2B355A879A40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "desafio-ir", "desafio-ir\desafio-ir.csproj", "{0BBB180F-CF3F-4AFA-B759-CA8449F91BE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "desafio-ir", "desafio-ir\desafio-ir.csproj", "{0BBB180F-CF3F-4AFA-B759-CA8449F91BE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calcula-poupanca", "calcula-poupanca\calcula-poupanca.csproj", "{253819E0-2DF7-442F-B3D1-E003393DEA3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{0BBB180F-CF3F-4AFA-B759-CA8449F91BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BBB180F-CF3F-4AFA-B759-CA8449F91BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BBB180F-CF3F-4AFA-B759-CA8449F91BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{253819E0-2DF7-442F-B3D1-E003393DEA3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253819E0-2DF7-442F-B3D1-E003393DEA3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253819E0-2DF7-442F-B3D1-E003393DEA3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253819E0-2DF7-442F-B3D1-E003393DEA3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
