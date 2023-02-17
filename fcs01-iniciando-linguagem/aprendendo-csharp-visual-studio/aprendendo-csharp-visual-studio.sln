@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calcula-poupanca-2", "calcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "investimento-a-longo-prazo", "investimento-a-longo-prazo\investimento-a-longo-prazo.csproj", "{5415A572-FC4B-48A0-AD74-BE0198B9EC5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "encadeando-for", "encadeando-for\encadeando-for.csproj", "{4BF300D8-3A00-4197-91CE-80513218FDEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{5415A572-FC4B-48A0-AD74-BE0198B9EC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5415A572-FC4B-48A0-AD74-BE0198B9EC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5415A572-FC4B-48A0-AD74-BE0198B9EC5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF300D8-3A00-4197-91CE-80513218FDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF300D8-3A00-4197-91CE-80513218FDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF300D8-3A00-4197-91CE-80513218FDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF300D8-3A00-4197-91CE-80513218FDEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
