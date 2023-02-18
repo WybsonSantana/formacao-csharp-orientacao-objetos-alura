@@ -23,13 +23,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "escopo", "escopo\escopo.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "desafio-ir", "desafio-ir\desafio-ir.csproj", "{0BBB180F-CF3F-4AFA-B759-CA8449F91BE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calcula-poupanca", "calcula-poupanca\calcula-poupanca.csproj", "{253819E0-2DF7-442F-B3D1-E003393DEA3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "calcula-poupanca", "calcula-poupanca\calcula-poupanca.csproj", "{253819E0-2DF7-442F-B3D1-E003393DEA3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calcula-poupanca-2", "calcula-poupanca-2\calcula-poupanca-2.csproj", "{6C9E9048-5512-423E-A31E-8A8CB334D493}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "calcula-poupanca-2", "calcula-poupanca-2\calcula-poupanca-2.csproj", "{6C9E9048-5512-423E-A31E-8A8CB334D493}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "investimento-a-longo-prazo", "investimento-a-longo-prazo\investimento-a-longo-prazo.csproj", "{5415A572-FC4B-48A0-AD74-BE0198B9EC5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "investimento-a-longo-prazo", "investimento-a-longo-prazo\investimento-a-longo-prazo.csproj", "{5415A572-FC4B-48A0-AD74-BE0198B9EC5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "encadeando-for", "encadeando-for\encadeando-for.csproj", "{4BF300D8-3A00-4197-91CE-80513218FDEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "encadeando-for", "encadeando-for\encadeando-for.csproj", "{4BF300D8-3A00-4197-91CE-80513218FDEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multiplos-de-tres", "multiplos-de-tres\multiplos-de-tres.csproj", "{B55BC1D6-B725-4504-BE12-D6E1529824B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{4BF300D8-3A00-4197-91CE-80513218FDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BF300D8-3A00-4197-91CE-80513218FDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BF300D8-3A00-4197-91CE-80513218FDEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B55BC1D6-B725-4504-BE12-D6E1529824B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B55BC1D6-B725-4504-BE12-D6E1529824B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B55BC1D6-B725-4504-BE12-D6E1529824B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B55BC1D6-B725-4504-BE12-D6E1529824B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
