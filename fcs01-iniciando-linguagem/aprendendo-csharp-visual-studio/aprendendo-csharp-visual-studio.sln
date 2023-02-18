@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "encadeando-for", "encadeand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multiplos-de-tres", "multiplos-de-tres\multiplos-de-tres.csproj", "{B55BC1D6-B725-4504-BE12-D6E1529824B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fatorial", "fatorial\fatorial.csproj", "{8924B892-CEF6-40B5-ABB3-6D9E3874D3B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{B55BC1D6-B725-4504-BE12-D6E1529824B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B55BC1D6-B725-4504-BE12-D6E1529824B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B55BC1D6-B725-4504-BE12-D6E1529824B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8924B892-CEF6-40B5-ABB3-6D9E3874D3B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8924B892-CEF6-40B5-ABB3-6D9E3874D3B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8924B892-CEF6-40B5-ABB3-6D9E3874D3B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8924B892-CEF6-40B5-ABB3-6D9E3874D3B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
