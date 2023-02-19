@@ -87,3 +87,15 @@ contaDoFulano = contaDoFulano2;
 Console.WriteLine(contaDoFulano == contaDoFulano2);
 
 Console.WriteLine(contaDoFulano.exibirDados());
+
+//ContaCorrente contaDoCiclano = new ContaCorrente();
+//contaDoCiclano.numeroAgencia = "0900";
+//contaDoCiclano.conta = "3210-7";
+//contaDoCiclano.saldo = 250.0;
+//contaDoCiclano.titular.nome = "Ciclano Tano";
+//contaDoCiclano.titular.cpf = "862.212.860-18";
+//contaDoCiclano.titular.profissao = "Analista Sr";
+
+//Console.WriteLine(contaDoCiclano.exibirDados());
+//System.NullReferenceException: 'Object reference not set to an instance of an object.'
+//contaDoCiclano was null.
