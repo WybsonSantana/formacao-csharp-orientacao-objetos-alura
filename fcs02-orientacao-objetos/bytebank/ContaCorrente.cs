@@ -12,5 +12,15 @@ namespace bytebank
         public string conta;
         public string titular;
         public double saldo;
+
+        public bool Depositar(double valor)
+        {
+            if (valor > 0)
+            {
+                this.saldo += valor;
+                return true;
+            }
+            return false;
+        }
     }
 }
