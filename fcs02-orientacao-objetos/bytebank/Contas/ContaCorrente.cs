@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using bytebank.Titular;
 
-namespace bytebank
+namespace bytebank.Contas
 {
     public class ContaCorrente
     {
@@ -17,7 +18,7 @@ namespace bytebank
         {
             if (valor > 0)
             {
-                this.saldo += valor;
+                saldo += valor;
                 return true;
             }
             return false;
@@ -25,9 +26,9 @@ namespace bytebank
 
         public bool Sacar(double valor)
         {
-            if (valor > 0 && valor <= this.saldo)
+            if (valor > 0 && valor <= saldo)
             {
-                this.saldo -= valor;
+                saldo -= valor;
                 return true;
             }
             return false;
@@ -35,9 +36,9 @@ namespace bytebank
 
         public bool Transferir(double valor, ContaCorrente destino)
         {
-            if (valor > 0 && valor <= this.saldo)
+            if (valor > 0 && valor <= saldo)
             {
-                this.Sacar(valor);
+                Sacar(valor);
                 destino.Depositar(valor);
                 return true;
             }
@@ -47,8 +48,8 @@ namespace bytebank
         public string exibirDados()
         {
             return $"\nInformações do cliente\n" +
-                $"\nDados pessoais:\nTitular: {this.titular.nome}\nCPF: {this.titular.cpf}\nProfissão: {this.titular.profissao}\n" +
-                $"\nDados da conta:\nAgência: {this.numeroAgencia}\nConta: {this.conta}\nSaldo: {this.saldo.ToString("c")}";
+                $"\nDados pessoais:\nTitular: {titular.nome}\nCPF: {titular.cpf}\nProfissão: {titular.profissao}\n" +
+                $"\nDados da conta:\nAgência: {numeroAgencia}\nConta: {conta}\nSaldo: {saldo.ToString("c")}";
         }
     }
 }

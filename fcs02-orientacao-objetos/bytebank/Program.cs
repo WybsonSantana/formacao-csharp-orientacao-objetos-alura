@@ -1,4 +1,5 @@
-﻿using bytebank;
+﻿using bytebank.Contas;
+using bytebank.Titular;
 
 Cliente fulano = new Cliente();
 fulano.nome = "Fulano de Tal";
