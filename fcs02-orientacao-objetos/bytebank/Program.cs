@@ -20,3 +20,15 @@ else
     Console.WriteLine("Depósito não realizado!");
 }
 Console.WriteLine($"O saldo da conta de {contaDoFulano.titular} é {contaDoFulano.saldo.ToString("c")}");
+
+double valorSaque = 150.00;
+Console.WriteLine($"\nSacando {valorSaque.ToString("c")} na conta de {contaDoFulano.titular}...");
+if (contaDoFulano.Sacar(valorSaque))
+{
+    Console.WriteLine("Saque realizado com sucesso!");
+}
+else
+{
+    Console.WriteLine("Saque não realizado!");
+}
+Console.WriteLine($"O saldo da conta de {contaDoFulano.titular} é {contaDoFulano.saldo.ToString("c")}");

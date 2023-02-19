@@ -22,5 +22,15 @@ namespace bytebank
             }
             return false;
         }
+
+        public bool Sacar(double valor)
+        {
+            if (valor > 0 && valor <= this.saldo)
+            {
+                this.saldo -= valor;
+                return true;
+            }
+            return false;
+        }
     }
 }
