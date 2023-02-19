@@ -72,3 +72,5 @@ Console.WriteLine(contaDoFulano == contaDoFulano2);
 
 contaDoFulano = contaDoFulano2;
 Console.WriteLine(contaDoFulano == contaDoFulano2);
+
+Console.WriteLine(contaDoFulano.exibirDados());

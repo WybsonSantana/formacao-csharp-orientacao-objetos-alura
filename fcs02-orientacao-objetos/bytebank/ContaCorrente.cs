@@ -43,5 +43,10 @@ namespace bytebank
             }
             return false;
         }
+
+        public string exibirDados()
+        {
+            return $"\nDados do cliente:\nTitular: {this.titular}\nAgência: {this.numeroAgencia}\nConta: {this.conta}\nSaldo: {this.saldo.ToString("c")}";
+        }
     }
 }
