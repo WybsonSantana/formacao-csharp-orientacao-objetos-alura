@@ -4,13 +4,13 @@ ContaCorrente contaDoFulano = new ContaCorrente();
 contaDoFulano.numeroAgencia = "0900";
 contaDoFulano.conta = "1010-9";
 contaDoFulano.titular = "Fulano de Tal";
-contaDoFulano.saldo = 100.0;
+//contaDoFulano.saldo = 100.0;
 
 ContaCorrente contaDoBeltrano = new ContaCorrente();
 contaDoBeltrano.numeroAgencia = "0900";
 contaDoBeltrano.conta = "2115-5";
 contaDoBeltrano.titular = "Bel Trano";
-contaDoBeltrano.saldo = 300.0;
+//contaDoBeltrano.saldo = 300.0;
 
 Console.WriteLine($"O saldo da conta de {contaDoFulano.titular} é {contaDoFulano.saldo.ToString("c")}");
 Console.WriteLine($"O saldo da conta de {contaDoBeltrano.titular} é {contaDoBeltrano.saldo.ToString("c")}");

@@ -11,7 +11,7 @@ namespace bytebank
         public string numeroAgencia;
         public string conta;
         public string titular;
-        public double saldo;
+        public double saldo = 100.0;
 
         public bool Depositar(double valor)
         {
