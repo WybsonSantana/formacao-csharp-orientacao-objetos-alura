@@ -54,4 +54,21 @@ else
 }
 
 Console.WriteLine($"\nO saldo da conta de {contaDoFulano.titular} é {contaDoFulano.saldo.ToString("c")}");
-Console.WriteLine($"O saldo da conta de {contaDoBeltrano.titular} é {contaDoBeltrano.saldo.ToString("c")}");
+Console.WriteLine($"O saldo da conta de {contaDoBeltrano.titular} é {contaDoBeltrano.saldo.ToString("c")}\n");
+
+double valor1 = 300.0;
+double valor2 = valor1;
+Console.WriteLine(valor1 == valor2);
+Console.WriteLine(valor1);
+Console.WriteLine(valor2);
+
+ContaCorrente contaDoFulano2 = new ContaCorrente();
+contaDoFulano2.numeroAgencia = "0900";
+contaDoFulano2.conta = "1010-9";
+contaDoFulano2.titular = "Fulano de Tal";
+//contaDoFulano2.saldo = 100.0;
+
+Console.WriteLine(contaDoFulano == contaDoFulano2);
+
+contaDoFulano = contaDoFulano2;
+Console.WriteLine(contaDoFulano == contaDoFulano2);
