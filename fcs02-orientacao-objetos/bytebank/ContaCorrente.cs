@@ -10,8 +10,8 @@ namespace bytebank
     {
         public string numeroAgencia;
         public string conta;
-        public string titular;
         public double saldo = 100.0;
+        public Cliente titular;
 
         public bool Depositar(double valor)
         {
@@ -46,7 +46,9 @@ namespace bytebank
 
         public string exibirDados()
         {
-            return $"\nDados do cliente:\nTitular: {this.titular}\nAgência: {this.numeroAgencia}\nConta: {this.conta}\nSaldo: {this.saldo.ToString("c")}";
+            return $"\nInformações do cliente\n" +
+                $"\nDados pessoais:\nTitular: {this.titular.nome}\nCPF: {this.titular.cpf}\nProfissão: {this.titular.profissao}\n" +
+                $"\nDados da conta:\nAgência: {this.numeroAgencia}\nConta: {this.conta}\nSaldo: {this.saldo.ToString("c")}";
         }
     }
 }
