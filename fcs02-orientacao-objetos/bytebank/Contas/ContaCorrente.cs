@@ -9,32 +9,32 @@ namespace bytebank.Contas
 {
     public class ContaCorrente
     {
-        private string numeroAgencia = "0900";
+        private string _numeroAgencia = "0900";
         public string NumeroAgencia
         {
-            get { return this.numeroAgencia; }
+            get { return this._numeroAgencia; }
             set
             {
                 if (value == "" || value == null)
                 {
-                    this.numeroAgencia = "0900";
+                    this._numeroAgencia = "0900";
                 }
                 else
                 {
-                    this.numeroAgencia = value;
+                    this._numeroAgencia = value;
                 }
             }
         }
 
-        public string conta;
-        private double saldo = 100.0;
-        public Cliente titular;
+        public string Conta { get; set; }
+        private double _saldo = 100.0;
+        public Cliente Titular { get; set; }
 
         public bool Depositar(double valor)
         {
             if (valor > 0)
             {
-                saldo += valor;
+                _saldo += valor;
                 return true;
             }
             return false;
@@ -42,9 +42,9 @@ namespace bytebank.Contas
 
         public bool Sacar(double valor)
         {
-            if (valor > 0 && valor <= saldo)
+            if (valor > 0 && valor <= _saldo)
             {
-                saldo -= valor;
+                _saldo -= valor;
                 return true;
             }
             return false;
@@ -52,7 +52,7 @@ namespace bytebank.Contas
 
         public bool Transferir(double valor, ContaCorrente destino)
         {
-            if (valor > 0 && valor <= saldo)
+            if (valor > 0 && valor <= _saldo)
             {
                 Sacar(valor);
                 destino.Depositar(valor);
@@ -64,22 +64,22 @@ namespace bytebank.Contas
         public string exibirDados()
         {
             return $"\nInformações do cliente\n" +
-                $"\nDados pessoais:\nTitular: {titular.nome}\nCPF: {titular.cpf}\nProfissão: {titular.profissao}\n" +
-                $"\nDados da conta:\nAgência: {numeroAgencia}\nConta: {conta}\nSaldo: {saldo.ToString("c")}";
+                $"\nDados pessoais:\nTitular: {Titular.Nome}\nCPF: {Titular.CPF}\nProfissão: {Titular.Profissao}\n" +
+                $"\nDados da conta:\nAgência: {_numeroAgencia}\nConta: {Conta}\nSaldo: {_saldo.ToString("c")}";
         }
 
         public void GetSaldo(double valor)
         {
             if (valor >= 0)
             {
-                this.saldo = valor;
+                this._saldo = valor;
             }
             return;
         }
 
         public double GetSaldo()
         {
-            return this.saldo;
+            return this._saldo;
         }
     }
 }
