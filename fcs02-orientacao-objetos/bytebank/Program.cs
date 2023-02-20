@@ -21,8 +21,8 @@ contaDoBeltrano.numeroAgencia = "0900";
 contaDoBeltrano.conta = "2115-5";
 contaDoBeltrano.titular = beltrano;
 
-Console.WriteLine($"O saldo da conta de {contaDoFulano.titular.nome} é {contaDoFulano.saldo.ToString("c")}");
-Console.WriteLine($"O saldo da conta de {contaDoBeltrano.titular.nome} é {contaDoBeltrano.saldo.ToString("c")}");
+Console.WriteLine($"O saldo da conta de {contaDoFulano.titular.nome} é {contaDoFulano.GetSaldo().ToString("c")}");
+Console.WriteLine($"O saldo da conta de {contaDoBeltrano.titular.nome} é {contaDoBeltrano.GetSaldo().ToString("c")}");
 
 double valorDeposito = 300.0;
 Console.WriteLine($"\nDepositando {valorDeposito.ToString("c")} na conta de {contaDoFulano.titular.nome}...");
@@ -34,7 +34,7 @@ else
 {
     Console.WriteLine("Depósito não realizado!");
 }
-Console.WriteLine($"O saldo da conta de {contaDoFulano.titular.nome} é {contaDoFulano.saldo.ToString("c")}");
+Console.WriteLine($"O saldo da conta de {contaDoFulano.titular.nome} é {contaDoFulano.GetSaldo().ToString("c")}");
 
 double valorSaque = 150.00;
 Console.WriteLine($"\nSacando {valorSaque.ToString("c")} na conta de {contaDoFulano.titular.nome}...");
@@ -46,7 +46,7 @@ else
 {
     Console.WriteLine("Saque não realizado!");
 }
-Console.WriteLine($"O saldo da conta de {contaDoFulano.titular.nome} é {contaDoFulano.saldo.ToString("c")}");
+Console.WriteLine($"O saldo da conta de {contaDoFulano.titular.nome} é {contaDoFulano.GetSaldo().ToString("c")}");
 
 double valorTransferencia = 80.0;
 string pagador = contaDoBeltrano.titular.nome;
@@ -62,8 +62,8 @@ else
     Console.WriteLine("Transferência não realizada!");
 }
 
-Console.WriteLine($"\nO saldo da conta de {contaDoFulano.titular.nome} é {contaDoFulano.saldo.ToString("c")}");
-Console.WriteLine($"O saldo da conta de {contaDoBeltrano.titular.nome} é {contaDoBeltrano.saldo.ToString("c")}\n");
+Console.WriteLine($"\nO saldo da conta de {contaDoFulano.titular.nome} é {contaDoFulano.GetSaldo().ToString("c")}");
+Console.WriteLine($"O saldo da conta de {contaDoBeltrano.titular.nome} é {contaDoBeltrano.GetSaldo().ToString("c")}\n");
 
 double valor1 = 300.0;
 double valor2 = valor1;

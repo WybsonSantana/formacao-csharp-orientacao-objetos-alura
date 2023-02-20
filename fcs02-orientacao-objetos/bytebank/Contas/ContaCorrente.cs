@@ -11,7 +11,7 @@ namespace bytebank.Contas
     {
         public string numeroAgencia;
         public string conta;
-        public double saldo = 100.0;
+        private double saldo = 100.0;
         public Cliente titular;
 
         public bool Depositar(double valor)
@@ -50,6 +50,20 @@ namespace bytebank.Contas
             return $"\nInformações do cliente\n" +
                 $"\nDados pessoais:\nTitular: {titular.nome}\nCPF: {titular.cpf}\nProfissão: {titular.profissao}\n" +
                 $"\nDados da conta:\nAgência: {numeroAgencia}\nConta: {conta}\nSaldo: {saldo.ToString("c")}";
+        }
+
+        public void GetSaldo(double valor)
+        {
+            if (valor >= 0)
+            {
+                this.saldo = valor;
+            }
+            return;
+        }
+
+        public double GetSaldo()
+        {
+            return this.saldo;
         }
     }
 }
