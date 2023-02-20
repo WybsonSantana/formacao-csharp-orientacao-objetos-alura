@@ -7,7 +7,6 @@ fulano.cpf = "164.144.010-48";
 fulano.profissao = "Analista Jr";
 
 ContaCorrente contaDoFulano = new ContaCorrente();
-contaDoFulano.numeroAgencia = "0900";
 contaDoFulano.conta = "1010-9";
 contaDoFulano.titular = fulano;
 
@@ -17,7 +16,6 @@ beltrano.cpf = "596.966.280-13";
 beltrano.profissao = "Analista PL";
 
 ContaCorrente contaDoBeltrano = new ContaCorrente();
-contaDoBeltrano.numeroAgencia = "0900";
 contaDoBeltrano.conta = "2115-5";
 contaDoBeltrano.titular = beltrano;
 
@@ -77,7 +75,6 @@ fulano2.cpf = "164.144.010-48";
 fulano2.profissao = "Analista Jr";
 
 ContaCorrente contaDoFulano2 = new ContaCorrente();
-contaDoFulano2.numeroAgencia = "0900";
 contaDoFulano2.conta = "1010-9";
 contaDoFulano2.titular = fulano2;
 
