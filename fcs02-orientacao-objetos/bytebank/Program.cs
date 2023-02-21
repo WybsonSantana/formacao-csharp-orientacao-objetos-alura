@@ -6,8 +6,7 @@ fulano.Nome = "Fulano de Tal";
 fulano.CPF = "164.144.010-48";
 fulano.Profissao = "Analista Jr";
 
-ContaCorrente contaDoFulano = new ContaCorrente();
-contaDoFulano.Conta = "1010-9";
+ContaCorrente contaDoFulano = new ContaCorrente(numeroAgencia: "0900", conta: "1010-9");
 contaDoFulano.Titular = fulano;
 
 Cliente beltrano = new Cliente();
@@ -15,8 +14,7 @@ beltrano.Nome = "Bel Trano";
 beltrano.CPF = "596.966.280-13";
 beltrano.Profissao = "Analista PL";
 
-ContaCorrente contaDoBeltrano = new ContaCorrente();
-contaDoBeltrano.Conta = "2115-5";
+ContaCorrente contaDoBeltrano = new ContaCorrente(numeroAgencia: "0900", conta: "2115-5");
 contaDoBeltrano.Titular = beltrano;
 
 Console.WriteLine($"O saldo da conta de {contaDoFulano.Titular.Nome} é {contaDoFulano.GetSaldo().ToString("c")}");
@@ -74,8 +72,7 @@ fulano2.Nome = "Fulano de Tal";
 fulano2.CPF = "164.144.010-48";
 fulano2.Profissao = "Analista Jr";
 
-ContaCorrente contaDoFulano2 = new ContaCorrente();
-contaDoFulano2.Conta = "1010-9";
+ContaCorrente contaDoFulano2 = new ContaCorrente(numeroAgencia: "0900", conta: "1010-9");
 contaDoFulano2.Titular = fulano2;
 
 Console.WriteLine(contaDoFulano == contaDoFulano2);
