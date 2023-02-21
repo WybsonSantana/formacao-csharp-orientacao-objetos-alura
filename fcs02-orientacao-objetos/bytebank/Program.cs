@@ -78,6 +78,7 @@ contaDoFulano2.Titular = fulano2;
 Console.WriteLine(contaDoFulano == contaDoFulano2);
 
 contaDoFulano = contaDoFulano2;
+
 Console.WriteLine(contaDoFulano == contaDoFulano2);
 
 Console.WriteLine(contaDoFulano.exibirDados());
@@ -93,3 +94,5 @@ Console.WriteLine(contaDoFulano.exibirDados());
 //Console.WriteLine(contaDoCiclano.exibirDados());
 //System.NullReferenceException: 'Object reference not set to an instance of an object.'
 //contaDoCiclano was null.
+
+Console.WriteLine($"\nTotal de contas criadas: {ContaCorrente.TotalDeContasCriadas}");

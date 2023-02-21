@@ -9,6 +9,8 @@ namespace bytebank.Contas
 {
     public class ContaCorrente
     {
+        public static int TotalDeContasCriadas { get; private set; }
+
         private string _numeroAgencia = "0900";
 
         public string NumeroAgencia
@@ -37,6 +39,7 @@ namespace bytebank.Contas
         {
             this.NumeroAgencia = numeroAgencia;
             this.Conta = conta;
+            TotalDeContasCriadas++;
         }
 
         public bool Depositar(double valor)
