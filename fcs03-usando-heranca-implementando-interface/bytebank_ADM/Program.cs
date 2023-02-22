@@ -21,3 +21,5 @@ GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
 gerenciador.Registrar(fulano);
 gerenciador.Registrar(belTrano);
 Console.WriteLine($"\nTotal em bonificações; {gerenciador.TotalDeBonificacao.ToString("c")}");
+
+Console.WriteLine($"\nTotal de funcionários: {Funcionario.TotalDeFuncionarios}");
