@@ -12,6 +12,7 @@ namespace bytebank_ADM.Funcionarios
         public string Nome { get; set; }
         public string Cpf { get; private set; }
         public double Salario { get; protected set; }
+        public string Senha { get; set; }
 
         public Funcionario(string cpf, double salario)
         {
@@ -24,5 +25,10 @@ namespace bytebank_ADM.Funcionarios
         public abstract void AumentarSalario();
 
         public abstract double GetBonificacao();
+
+        public bool Autenticar(string senha)
+        {
+            return this.Senha == senha;
+        }
     }
 }

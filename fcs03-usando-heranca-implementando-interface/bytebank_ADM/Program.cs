@@ -73,4 +73,14 @@ void UsarSistema()
     juliana.Nome = "Juliana Freitas";
     juliana.Senha = "5678";
     sistema.Logar(juliana, "5678");
+
+    Auxiliar fernanda = new Auxiliar(cpf: "610.045.273-65");
+    fernanda.Nome = "Fernanda Mendes";
+    fernanda.Senha = "2345";
+    sistema.Logar(fernanda, "2345");
+
+    Designer marcelle = new Designer(cpf: "021.223.246-00");
+    marcelle.Nome = "Marcelle Freitas";
+    marcelle.Senha = "3456";
+    sistema.Logar(marcelle, "3456");
 }
