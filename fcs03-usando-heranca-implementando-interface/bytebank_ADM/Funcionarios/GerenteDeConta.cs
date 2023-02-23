@@ -8,6 +8,8 @@ namespace bytebank_ADM.Funcionarios
 {
     public class GerenteDeConta : Funcionario
     {
+        public string Senha { get; set; }
+
         public GerenteDeConta(string cpf) : base(cpf, 4000.0)
         {
 
@@ -21,6 +23,11 @@ namespace bytebank_ADM.Funcionarios
         public override double GetBonificacao()
         {
             return this.Salario * 0.25;
+        }
+
+        public bool Autenticar(string senha)
+        {
+            return this.Senha == senha;
         }
     }
 }
