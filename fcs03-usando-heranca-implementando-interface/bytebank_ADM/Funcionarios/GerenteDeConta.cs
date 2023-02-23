@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bytebank_ADM.SistemaInterno;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace bytebank_ADM.Funcionarios
 {
-    public class GerenteDeConta : Funcionario
+    public class GerenteDeConta : Autenticavel
     {
         public GerenteDeConta(string cpf) : base(cpf, 4000.0)
         {
@@ -21,6 +22,11 @@ namespace bytebank_ADM.Funcionarios
         public override double GetBonificacao()
         {
             return this.Salario * 0.25;
+        }
+
+        public override bool Autenticar(string login, string senha)
+        {
+            return this.Login == login && this.Senha == senha;
         }
     }
 }

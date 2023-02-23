@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bytebank_ADM.SistemaInterno;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace bytebank_ADM.Funcionarios
 {
-    public class Diretor : Funcionario
+    public class Diretor : Autenticavel
     {
         public Diretor(string cpf) : base(cpf, 5000.0)
         {
@@ -22,6 +23,11 @@ namespace bytebank_ADM.Funcionarios
         public override double GetBonificacao()
         {
             return this.Salario *= 0.5;
+        }
+
+        public override bool Autenticar(string login, string senha)
+        {
+            return this.Login == login && this.Senha == senha;
         }
     }
 }

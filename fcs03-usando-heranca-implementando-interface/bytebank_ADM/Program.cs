@@ -66,21 +66,13 @@ void UsarSistema()
 
     Diretor patricia = new Diretor(cpf: "512.315.406-56");
     patricia.Nome = "Patrícia Reis";
+    patricia.Login = "patricia.reis@bytebank.com.br";
     patricia.Senha = "1234";
-    sistema.Logar(patricia, "1234");
+    sistema.Logar(patricia, "patricia.reis@bytebank.com.br", "1234");
 
     GerenteDeConta juliana = new GerenteDeConta(cpf: "001.404.451-02");
     juliana.Nome = "Juliana Freitas";
+    juliana.Login = "juliana.freitas@bytebank.com.br";
     juliana.Senha = "5678";
-    sistema.Logar(juliana, "5678");
-
-    Auxiliar fernanda = new Auxiliar(cpf: "610.045.273-65");
-    fernanda.Nome = "Fernanda Mendes";
-    fernanda.Senha = "2345";
-    sistema.Logar(fernanda, "2345");
-
-    Designer marcelle = new Designer(cpf: "021.223.246-00");
-    marcelle.Nome = "Marcelle Freitas";
-    marcelle.Senha = "3456";
-    sistema.Logar(marcelle, "3456");
+    sistema.Logar(juliana, "juliana.freitas@bytebank.com.br", "5678");
 }
