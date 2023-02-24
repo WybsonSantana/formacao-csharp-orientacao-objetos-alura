@@ -1,4 +1,5 @@
 ﻿using bytebank_ADM.Funcionarios;
+using bytebank_ADM.Parceiros;
 using bytebank_ADM.SistemaInterno;
 using bytebank_ADM.Utilitario;
 
@@ -75,4 +76,9 @@ void UsarSistema()
     juliana.Login = "juliana.freitas@bytebank.com.br";
     juliana.Senha = "5678";
     sistema.Logar(juliana, "juliana.freitas@bytebank.com.br", "5678");
+
+    ParceiroComercial lorena = new ParceiroComercial();
+    lorena.Login = "parceiro.lorena@bytebank.com.br";
+    lorena.Senha = "1357";
+    sistema.Logar(lorena, "parceiro.lorena@bytebank.com.br", "1357");
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace bytebank_ADM.Funcionarios
 {
-    public class Diretor : Autenticavel
+    public class Diretor : FuncionarioAutenticavel
     {
         public Diretor(string cpf) : base(cpf, 5000.0)
         {
@@ -23,11 +23,6 @@ namespace bytebank_ADM.Funcionarios
         public override double GetBonificacao()
         {
             return this.Salario *= 0.5;
-        }
-
-        public override bool Autenticar(string login, string senha)
-        {
-            return this.Login == login && this.Senha == senha;
         }
     }
 }
