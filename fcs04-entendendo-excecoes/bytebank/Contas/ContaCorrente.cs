@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using bytebank.Titular;
+﻿using bytebank.Titular;
 
 namespace bytebank.Contas
 {
@@ -13,18 +8,14 @@ namespace bytebank.Contas
 
         public static double TaxaOperacao { get; set; }
 
-        private string _numeroAgencia = "0900";
+        private int _numeroAgencia;
 
-        public string NumeroAgencia
+        public int NumeroAgencia
         {
             get { return this._numeroAgencia; }
             private set
             {
-                if (value == "" || value == null)
-                {
-                    this._numeroAgencia = "0900";
-                }
-                else
+                if (value > 0)
                 {
                     this._numeroAgencia = value;
                 }
@@ -37,11 +28,11 @@ namespace bytebank.Contas
 
         public Cliente Titular { get; set; }
 
-        public ContaCorrente(string numeroAgencia, string conta)
+        public ContaCorrente(int numeroAgencia, string conta)
         {
             this.NumeroAgencia = numeroAgencia;
             this.Conta = conta;
-
+            /*
             try
             {
                 TaxaOperacao = 30 / TotalDeContasCriadas;
@@ -50,7 +41,7 @@ namespace bytebank.Contas
             {
                 Console.WriteLine("Ops! Algo deu errado! Não é possível dividir por zero.");
             }
-
+            */
             TotalDeContasCriadas++;
         }
 

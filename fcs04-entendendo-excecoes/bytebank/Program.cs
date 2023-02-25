@@ -1,5 +1,11 @@
 ﻿using bytebank.Contas;
-
-ContaCorrente conta1 = new ContaCorrente("0900", "1213-4");
+try
+{
+    ContaCorrente conta1 = new ContaCorrente(0, "1213-4");
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine("Ops! Algo deu errado! Não é possível criar uma conta com agência menor ou igual a zero");
+}
 
 Console.WriteLine(ContaCorrente.TaxaOperacao);
