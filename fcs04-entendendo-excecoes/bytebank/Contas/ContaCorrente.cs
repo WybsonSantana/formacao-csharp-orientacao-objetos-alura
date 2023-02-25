@@ -11,6 +11,8 @@ namespace bytebank.Contas
     {
         public static int TotalDeContasCriadas { get; private set; }
 
+        public static double TaxaOperacao { get; set; }
+
         private string _numeroAgencia = "0900";
 
         public string NumeroAgencia
@@ -39,6 +41,7 @@ namespace bytebank.Contas
         {
             this.NumeroAgencia = numeroAgencia;
             this.Conta = conta;
+            TaxaOperacao = 30 / TotalDeContasCriadas;
             TotalDeContasCriadas++;
         }
 
