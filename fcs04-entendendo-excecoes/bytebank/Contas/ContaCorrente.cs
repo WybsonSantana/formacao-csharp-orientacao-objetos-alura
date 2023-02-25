@@ -34,7 +34,7 @@ namespace bytebank.Contas
 
             if (numeroAgencia <= 0)
             {
-                throw new ArgumentException("Número de agência menor ou igual a zero");
+                throw new ArgumentException("Número de agência menor ou igual a zero", nameof(numeroAgencia));
             }
 
             this.Conta = conta;
