@@ -1,4 +1,5 @@
-﻿using bytebank.Titular;
+﻿using bytebank.Exceptions;
+using bytebank.Titular;
 
 namespace bytebank.Contas
 {
@@ -69,7 +70,7 @@ namespace bytebank.Contas
                 _saldo -= valor;
                 return true;
             }
-            return false;
+            throw new SaldoInsuficienteException("Saldo insuficiente!");
         }
 
         public bool Transferir(double valor, ContaCorrente destino)
