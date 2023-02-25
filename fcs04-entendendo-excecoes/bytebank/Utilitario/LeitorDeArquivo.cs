@@ -23,7 +23,7 @@ namespace bytebank.Utilitario
         {
             Console.WriteLine("Lendo a linha do arquivo...");
 
-            throw new IOException();
+            //throw new IOException();
 
             return "Linha do arquivo";
         }
