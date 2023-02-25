@@ -31,7 +31,14 @@ namespace bytebank.Contas
         public ContaCorrente(int numeroAgencia, string conta)
         {
             this.NumeroAgencia = numeroAgencia;
+
+            if (numeroAgencia <= 0)
+            {
+                throw new ArgumentException("Número de agência menor ou igual a zero");
+            }
+
             this.Conta = conta;
+
             /*
             try
             {
