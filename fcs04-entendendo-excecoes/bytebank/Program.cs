@@ -23,6 +23,14 @@ using bytebank.Utilitario;
 //    Console.WriteLine(ex.Message);
 //}
 #endregion
-LeitorDeArquivo leitor = new LeitorDeArquivo("contas.txt");
-leitor.LerProximaLinha();
-leitor.Dispose();
+
+try
+{
+    LeitorDeArquivo leitor = new LeitorDeArquivo("contas.txt");
+    leitor.LerProximaLinha();
+    leitor.Dispose();
+}
+catch (IOException ex)
+{
+    Console.WriteLine("Leitura do arquivo interrompida!");
+}
